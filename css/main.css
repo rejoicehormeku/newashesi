@@ -12,7 +12,6 @@ h5,
 h6 {
   font-family: 'Roboto Condensed', sans-serif;
 }
-
 p {
   font-family: 'Roboto', sans-serif;
   line-height: 22px;
@@ -182,7 +181,7 @@ a:hover {
   margin-top: 25px;
 }
 #hero-area .btn {
-  background: #990000;
+  background: #414141;
   border: none;
   color: #fff;
   padding: 20px 35px;
@@ -857,7 +856,27 @@ ul.social-icons li {
 .team-member .social-icons .facebook {
   padding: 4px 12px;
 }
-
+.about-feature {
+  margin-top: 50px;
+}
+.about-feature .block {
+  color: #fff;
+  width: 33.33%;
+  padding: 5%;
+  float: left;
+}
+.about-feature .block p {
+  font-weight: 300;
+}
+.about-feature .about-feature-1 {
+  background: #02bdd5;
+}
+.about-feature .about-feature-2 {
+  background: #00B0C7;
+}
+.about-feature .about-feature-3 {
+  background: #00A6BB;
+}
 #blog-full-width {
   padding: 40px 0 80px;
 }
