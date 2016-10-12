@@ -13,7 +13,7 @@
         <!-- Mobile Specific Metas
         ================================================== -->
         <meta name="format-detection" content="telephone=no">
-        <meta name="viewport" content="width=device-width; initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <!-- Template CSS Files
         ================================================== -->
@@ -76,6 +76,12 @@
 		<script src="js/app/bootstrap.js"></script>
 		<script src="js/lib/jquery.mobile.js"></script>
 	
+
+		<script>
+		function goBack() {
+			window.history.back();
+		}
+		</script>
 	<style>
 			.ui-selectmenu.ui-popup .ui-input-search {
 				margin-left: .5em;
@@ -110,7 +116,7 @@
             <div class="container">
                 <div class="navbar-header">
                     <!-- responsive nav button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -127,9 +133,24 @@
                     <!-- /logo -->
                 </div>
                 <!-- main menu -->
+                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                    <div class="main-menu">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="index.html" >Home</a>
+                            </li>
+                            <li><a href="#about">Library</a></li>
+                            <li><a href="#cs">Computer Science</a></li>
+							<li><a href="#service">Engineering Block</a></li>
+							<li><a href="#cafe">Cafeteria</a></li>
+                            
+                        </ul>
+                    </div>
+                </nav>
                 <!-- /main nav -->
             </div>
         </header>
+        
         
         <!--
         ==================================================
@@ -174,7 +195,7 @@
 		<div class="container">
 			<div class="col-md-12">
                         <div class="block">
-                            <h2>THE TODD AND RUTH WARREN LIBRARY</h2>
+						  <h2>THE TODD AND RUTH WARREN LIBRARY</h2>
                             <ol class="breadcrumb">
                                 <li>
                                     <a href="index.html">
@@ -225,21 +246,6 @@ The Todd and Ruth Warren Library was established in 2000 along with the other mo
                             </figure>
                                                      </div>
    
-                        <div>
-                            <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="600ms">
-                                <div class="img-wrapper">
-                                    <img src="images/lib1.jpg" class="img-responsive" alt="" >
-                                </div>
-                                <figcaption>
-                                <h4>
-                                <a href="#">
-                                       Just another angle                                 
-                                </a>
-                                </h4>
-                                
-                                </figcaption>
-                            </figure>
-                    </div>
 					<div>
                             <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="600ms">
                                 <div class="img-wrapper">
@@ -255,6 +261,9 @@ The Todd and Ruth Warren Library was established in 2000 along with the other mo
                                 </figcaption>
                             </figure>
                 </div>
+				<div>
+						<a href class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green" data-wow-delay=".9s" onclick="goBack()">Back</a>
+                          </div>
             </div> 
          </div>
 		 
@@ -321,6 +330,9 @@ The Engineering block is the most striking feature of Ashesi today. With complex
                             </figcaption>
                         </figure>
                     </div>
+					<div>
+						<a href class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green" data-wow-delay=".9s" onclick="goBack()">Back</a>
+                          </div>
                 </div>
 				 </div>
 
@@ -399,6 +411,9 @@ Ashesi has 2 labs fully stocked with functional modern computers. Ranging from t
                                                            </figcaption>
                         </figure>
                     </div>
+		<div>
+						<a href class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green" data-wow-delay=".9s" onclick="goBack()">Back</a>
+                          </div>
                 </div>
 				 </div>			 
 				 
@@ -477,6 +492,9 @@ Ashesi's cafeteria serve as students' hangouts as well as a clean environment to
                                  </figcaption>
                         </figure>
                     </div>
+	<div>
+						<a href class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green" data-wow-delay=".9s" onclick="goBack()">Back</a>
+                          </div>
                 </div>
 				 </div>
 				 
